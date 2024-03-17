@@ -34,23 +34,23 @@ console.log(extension); */
 //                                    in one continuous line of code.
 
 // ---- NO METHOD CHAINING ----
-let username = window.prompt("Enter your username");
-
+/* let username = window.prompt("Enter your username");
 username = username.trim();
 
-console.log(username);
 let letter = username.charAt(0);
-console.log(letter);
 letter = letter.toUpperCase();
-console.log(letter);
 
 let extraChar = username.slice(1);
-console.log(extraChar);
 extraChar = extraChar.toLowerCase();
-console.log(extraChar);
 
-username - letter + extraChar;
+username = letter + extraChar;
 
-console.log(username);
+console.log(username); */
 
 // ---- METHOD CHAINING ----
+
+username =
+  username.trim().charAt(0).toUpperCase() +
+  username.trim().slice(1).toLowerCase();
+
+console.log(username);
